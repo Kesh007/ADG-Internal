@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="8dp"
-    android:background="#3F51B5">
+    android:background="#FFC0C0C0">
 
 
     <TextView
@@ -12,12 +12,18 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
-        android:textColor="#f8f8ff"
+        android:textColor="#FF000000"
         android:textSize="17dp" />
+
     <CheckBox android:id="@+id/check1"
         android:focusable="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+
+
+
+
 
 
 </LinearLayout>

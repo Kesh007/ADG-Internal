@@ -52,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onGroupExpand(int groupPosition) {
-                Toast.makeText(getApplicationContext(),
+               /* Toast.makeText(getApplicationContext(),
                         listDataHeader.get(groupPosition) + " Expanded",
-                        Toast.LENGTH_SHORT).show();
+                        Toast.LENGTH_SHORT).show();*/
             }
         });
 
@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(getApplicationContext(),
+              /*  Toast.makeText(getApplicationContext(),
                         listDataHeader.get(groupPosition) + " Collapsed",
-                        Toast.LENGTH_SHORT).show();
+                        Toast.LENGTH_SHORT).show();*/
 
             }
         });
@@ -76,15 +76,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
-                // TODO Auto-generated method stub
-                Toast.makeText(
+                //TODO Auto-generated method stub
+               /* Toast.makeText(
                         getApplicationContext(),
                         listDataHeader.get(groupPosition)
                                 + " : "
                                 + listDataChild.get(
                                 listDataHeader.get(groupPosition)).get(
                                 childPosition), Toast.LENGTH_SHORT)
-                        .show();
+                        .show();*/
                 return false;
             }
         });
@@ -105,18 +105,18 @@ public class MainActivity extends AppCompatActivity {
         // Adding child data
         List<String> KeshikaTank = new ArrayList<String>();
         KeshikaTank.add("Attendance");
-        KeshikaTank.add("comment");
+        //KeshikaTank.add("comment");
 
 
 
         List<String> MehulSinghal = new ArrayList<String>();
         MehulSinghal.add("Attendance");
-        MehulSinghal.add("comment");
+        //MehulSinghal.add("comment");
 
 
         List<String> NamanKhurpia = new ArrayList<String>();
         NamanKhurpia.add("Attendance");
-        NamanKhurpia.add("comment");
+        //NamanKhurpia.add("comment");
 
 
         listDataChild.put(listDataHeader.get(0), KeshikaTank); // Header, Child data
